@@ -89,7 +89,7 @@ dependencies {
 //}
 //waitUntilSpringBootIsUp.dependsOn startSpringBoot
 
-task testLoad(type: JavaExec) {
+task nghiaTest(type: JavaExec) {
     description = 'Test load the Spring Boot web service with Gatling'
     group = 'Load Test'
     classpath = sourceSets.test.runtimeClasspath
