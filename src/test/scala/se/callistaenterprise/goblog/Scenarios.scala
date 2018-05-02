@@ -39,10 +39,10 @@ object Scenarios {
       feed(browse_guids)
         .exec(
           http("Todos List_xx")
-            .get("/todos/" + "${todoId}")
+            .get("/thao_test/" + "${todoId}")
             .headers(Headers.http_header)
             .check(status.is(200))
         )
         .pause(3)
     }
-}x
+}
